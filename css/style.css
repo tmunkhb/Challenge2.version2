@@ -4,6 +4,9 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #ffffff;
+}
 .hero {
     position: relative;
     width: 100%;
@@ -104,21 +107,95 @@ img {
     line-height: 1.7;
     color: black;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 10%;
     font-size: 20px;
     text-align: center;
 }
 
-.boxes {
+
+
+.box1 {
     display: flex;
-    height: 100%;
-    width: 100%;
+    border: 5px solid #333;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 
+.img1 {
+    flex: 3;
+    background-size: cover;
+    background-position: center;
+}
+
+.runbuddy {
+    margin: 2rem;
+    flex: 1;
+    padding-top: 10%;
+    padding-left: 5%;
+
+}
+
+.runbuddy h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding:auto;
+}
+
+.container {
+    display: flex;
+    margin-left: 25%;
+
+}
 .box2 {
-    height: 50%;
+    display: flex;
+    border: 5px solid #333;
+    margin-bottom: 2rem;
+  
+}
+
+.img2 {
+    flex:none;
+    background-size:cover;
+    background-position: center;
+}
+
+.robotgladiator {
+    margin: 2rem;
+    flex: 1;
+    padding-top: 10%;
+    padding-left: 5%;
+
+}
+.robotgladiator h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding:auto;
 }
 
 .box3 {
-    height: 50%;
+    display: flex;
+    border: 5px solid #333;
+    margin-bottom: 2rem;
+
+}
+
+.img3 {
+    flex:none;
+    background-size:cover;
+    background-position: center;
+}
+
+.calculator {
+    margin: 2rem;
+    flex: 1;
+    padding-top: 10%;
+    padding-left: 5%;
+
+}
+.calculator h3{
+    font-size: 2rem;
+    font-weight: 600;
+    padding:auto;
 }
