@@ -2,59 +2,77 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
+
 
 body {
     background-color: #ffffff;
 }
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #eff4fd;
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    top: 0;
 }
 
-nav {
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color:darkslategray;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    list-style: none;
     align-items: center;
     justify-content: space-between;
 }
 
-nav h2 {
-    color: darkslategrey;
-    margin-left: 5%;
-}
 
-nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 30px 200px;
-}
-
-nav ul li {
+header nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+header nav ul li a{
     text-decoration: none;
     color: darkslategrey;
     font-weight: bold;
     font-size: xx-large;
-
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-nav ul li a:hover {
-    color: rgb(38, 73, 230);
-    border-bottom: solid 3px orange;
+header nav ul li a:hover {
+    color: #ff6b7a;
 }
 
-.hero-intro {
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-top: 5%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.avatar {
+    width: 40%;
 }
 
 .hero-intro h1 {
@@ -65,11 +83,11 @@ nav ul li a:hover {
 }
 
 span {
-    color: rgb(38, 73, 230);
+    color: #ff6b7a;
 }
 
 .hero-intro a{
-    background-color: rgb(38, 73, 230);
+    background-color: #ff6b7a;
     padding: 15px 100px;
     text-decoration: none;
     font-weight: bold;
@@ -84,42 +102,45 @@ img {
     height: 100%;
     width: 100%;
 }
-.images {
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    right:15%;
-    top: 30%;
-}
+
 
 .section-title {
     font-size: 48px;
-    color: rgb(38, 73, 230);
+    color:  #ff6b7a;
     border-bottom: 3px solid ;
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 30px auto 35px auto;
     width: 8%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
+.about-me {
+    background-color: darkslategrey;
+    padding: 5%;
+}
 .about-me p {
     line-height: 1.7;
-    color: black;
+    color: #fff;
     width: 80%;
-    margin: 0 auto 10%;
+    margin: 0 auto 10% auto;
     font-size: 20px;
     text-align: center;
 }
 
 
-
-.box1 {
+.work {
     display: flex;
-    border: 5px solid #333;
-    margin-bottom: 2rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.box1 {
+    border: 2px solid #333;
+    margin: auto;
+    padding-bottom:0;
 
 }
 
@@ -131,71 +152,170 @@ img {
 
 .runbuddy {
     margin: 2rem;
-    flex: 1;
-    padding-top: 10%;
-    padding-left: 5%;
-
-}
-
-.runbuddy h3{
+    text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    padding:auto;
+    color:darkslategray;
 }
 
 .container {
-    display: flex;
-    margin-left: 25%;
+    margin-right: 20%;
 
 }
 .box2 {
-    display: flex;
-    border: 5px solid #333;
+    border: 2px solid #333;
     margin-bottom: 2rem;
-  
-}
-
-.img2 {
-    flex:none;
     background-size:cover;
     background-position: center;
 }
 
 .robotgladiator {
-    margin: 2rem;
-    flex: 1;
-    padding-top: 10%;
-    padding-left: 5%;
-
-}
-.robotgladiator h3{
     font-size: 2rem;
     font-weight: 600;
     padding:auto;
+    color: darkslategray; 
+
 }
+
 
 .box3 {
-    display: flex;
-    border: 5px solid #333;
+    border: 2px solid #333;
     margin-bottom: 2rem;
-
-}
-
-.img3 {
-    flex:none;
     background-size:cover;
     background-position: center;
 }
 
 .calculator {
-    margin: 2rem;
-    flex: 1;
-    padding-top: 10%;
-    padding-left: 5%;
-
-}
-.calculator h3{
     font-size: 2rem;
     font-weight: 600;
     padding:auto;
+    color: darkslategray;
+
+}
+
+.contact {
+    background: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+  
+.contact-info {
+    margin-left: 25%;
+    margin-top: 70px;
+    padding: 50px;
+}
+
+  
+.contact-info h3 {
+    color: #ff6b7a;
+    font-size: 35px;    
+}
+    
+.contact-info p {
+      line-height: 1.5;
+      font-size: 25px;
+      font-style: normal;
+      color:#fff;
+}
+  
+.contact-form {
+    margin-right: 40%;
+    margin-top: 50px;
+}
+
+.contact-form h3 {
+    color: #ff6b7a;
+    font-size: 35px;  
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    display: block;
+    padding: 7px 20px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 200%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+  
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+  
+.contact-form button {
+    width: 200%;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b7a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+  
+.contact-form button:hover {
+    color: red;
+    background: white;
+}
+  
+.contact-info a {
+      color: #ff6b7a;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-intro, .avatar {
+        width: 100%;
+    }
+
+    .hero-intro {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+    .contact-info {
+        flex:1 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    section, header {
+        padding: 30px, 15px;
+    }
+
+    
+
+
 }
