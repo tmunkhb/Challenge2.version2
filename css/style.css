@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-
+/* background color */
 body {
     background-color: #ffffff;
 }
-
+/* Header section style */
 header {
     display: flex;
     justify-content: space-around;
@@ -61,6 +61,7 @@ header nav ul li a:hover {
     color: #ff6b7a;
 }
 
+/* Hero section style */
 .hero {
     display: flex;
     justify-content: center;
@@ -115,6 +116,7 @@ img {
     padding-top: 5%;
 }
 
+/* About me section */
 .about-me {
     background-color: darkslategrey;
     padding: 5%;
@@ -128,71 +130,71 @@ img {
     text-align: center;
 }
 
-
+/* Projects section */
 .work {
+    max-width: 1242px;
+    margin: 24px auto;
+    height: 613px;
     display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    align-items:center;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 .box1 {
     border: 2px solid #333;
-    margin: auto;
-    padding-bottom:0;
-
+    padding-bottom: 0;
+    position: relative;
 }
 
-.img1 {
-    flex: 3;
-    background-size: cover;
-    background-position: center;
-}
-
-.runbuddy {
-    margin: 2rem;
+.runbuddy h3 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    color:darkslategray;
+    color:#fff;
 }
 
 .container {
-    margin-right: 20%;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
 .box2 {
-    border: 2px solid #333;
-    margin-bottom: 2rem;
-    background-size:cover;
-    background-position: center;
+    position: relative;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    height: 50%;
 }
 
-.robotgladiator {
-    font-size: 2rem;
+.robotgladiator h3 {
+    font-size: 1.5rem;
     font-weight: 600;
     padding:auto;
-    color: darkslategray; 
+    color: black; 
 
 }
-
 
 .box3 {
-    border: 2px solid #333;
-    margin-bottom: 2rem;
-    background-size:cover;
-    background-position: center;
+    position: relative;
+    height: 50%;
+    border-right: 2px solid #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
 }
 
-.calculator {
-    font-size: 2rem;
+.text-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.calculator h3 {
+    font-size: 1.5rem;
     font-weight: 600;
-    padding:auto;
-    color: darkslategray;
+    color:black;
 
 }
 
+
+/* Contact section */
 .contact {
     background: darkslategrey;
     display: flex;
@@ -214,10 +216,10 @@ img {
 }
     
 .contact-info p {
-      line-height: 1.5;
-      font-size: 25px;
-      font-style: normal;
-      color:#fff;
+    line-height: 1.5;
+    font-size: 25px;
+    font-style: normal;
+    color:#fff;
 }
   
 .contact-form {
@@ -231,12 +233,12 @@ img {
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid grey;
     border-radius: 10px;
     display: block;
     padding: 7px 20px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: gray;
     width: 200%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -269,7 +271,7 @@ img {
 }
 
 
-
+/* Responsive layout section media query */
 
 @media screen and (max-width: 980px) {
     header {
@@ -294,28 +296,54 @@ img {
     }
 
     .hero-intro, .avatar {
-        width: 100%;
+        width: 70%;
+        margin: auto;
+        
     }
 
     .hero-intro {
         text-align: center;
+ 
     }
 
+    .hero-intro h1 {
+        font-size: 75px;
+    }
     .section-title {
         width: 80%;
     }
     .contact-info {
         flex:1 100%;
     }
+
+    .runbuddy span {
+        font-size: 25px ;
+    }
+
+    .container span {
+        font-size: 20px;
+    }
+
 }
+
+@media screen and (max-width: 1242px) {
+    .work {
+        flex-direction: column;
+        height: initial;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 
     section, header {
         padding: 30px, 15px;
     }
+}
+
 
     
 
 
-}
+
+    
