@@ -99,11 +99,16 @@ span {
     font-size: 30px;
 }
 
-img {
+.mypic {
     height: 100%;
     width: 100%;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 
 .section-title {
     font-size: 48px;
@@ -131,67 +136,7 @@ img {
 }
 
 /* Projects section */
-.work {
-    max-width: 1242px;
-    margin: 24px auto;
-    height: 613px;
-    display: flex;
-}
-.box1 {
-    border: 2px solid #333;
-    padding-bottom: 0;
-    position: relative;
-}
 
-.runbuddy h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color:#fff;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.box2 {
-    position: relative;
-    border-top: 2px solid #333;
-    border-right: 2px solid #333;
-    height: 50%;
-}
-
-.robotgladiator h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding:auto;
-    color: black; 
-
-}
-
-.box3 {
-    position: relative;
-    height: 50%;
-    border-right: 2px solid #333;
-    border-top: 2px solid #333;
-    border-bottom: 2px solid #333;
-}
-
-.text-overlay {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-}
-
-.calculator h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color:black
-
-}
 
 
 /* Contact section */
