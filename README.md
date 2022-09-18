@@ -30,3 +30,7 @@ Three projects are included however one is still in process.
 
 ### Contact section
 Owner's email and phone is provided along with user's input section for name and messege.
+
+### Screenshot of the portfolio
+![Screenshot 2022-08-16 223701](https://user-images.githubusercontent.com/109834827/185022312-177435f0-04c6-4a00-bc25-3d949ebc7181.png)
+
