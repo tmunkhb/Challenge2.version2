@@ -19,11 +19,17 @@ header {
 }
 
 header h1{
-    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     color:darkslategray;
     margin-top: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+span {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header a {
@@ -52,7 +58,8 @@ header nav ul li {
 header nav ul li a{
     text-decoration: none;
     color: darkslategrey;
-    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: xx-large;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -60,6 +67,11 @@ header nav ul li a{
 header nav ul li a:hover {
     color: #ff6b7a;
 }
+
+.contactbtn:hover {
+    color:white;
+}
+
 
 /* Hero section style */
 .hero {
@@ -77,6 +89,8 @@ header nav ul li a:hover {
 }
 
 .hero-intro h1 {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 100px;
     color:darkslategrey;
     margin-bottom: 25px;
@@ -91,7 +105,8 @@ span {
     background-color: #ff6b7a;
     padding: 15px 100px;
     text-decoration: none;
-    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     display: inline-block;
     margin: 5px 0;
@@ -111,6 +126,8 @@ span {
 }
 
 .section-title {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 48px;
     color:  #ff6b7a;
     border-bottom: 3px solid ;
@@ -152,12 +169,15 @@ span {
     margin-left: 25%;
     margin-top: 70px;
     padding: 50px;
+    
 }
 
   
-.contact-info h3 {
+.contact-info h3, p {
     color: #ff6b7a;
-    font-size: 35px;    
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
     
 .contact-info p {
@@ -174,7 +194,9 @@ span {
 
 .contact-form h3 {
     color: #ff6b7a;
-    font-size: 35px;  
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;  
 }
 
 .contact-form input, .contact-form textarea {
@@ -204,6 +226,8 @@ span {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
   
 .contact-form button:hover {
